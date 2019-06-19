@@ -1,0 +1,74 @@
+\documentclass[]{article}
+\usepackage{graphicx}
+\usepackage[normalem]{ulem}
+\usepackage[a4paper, total={6in, 8in}]{geometry}
+\setlength\parindent{0pt}
+\setlength{\parskip}{1em}
+\graphicspath{ {./} }
+\thispagestyle{empty}
+
+\begin{document}
+
+{\Large BSSPC ‘19 P4 - Katyusha!}
+\\\\
+\textbf{\large Problem Statement}
+\par
+It is the year $1945$. You are a Soviet \textit{Super-Soldier} and can predict the future. You have just completed a mission to sabotage the dying capital of the Third Reich. You need to safely return to your \textit{comrades }advancing on the outskirts of Berlin.
+
+\par
+However, there are several \textbf{Katyusha} units that are currently firing on the area between you and your comrades. There are three types of \textbf{Katyushas}: the light \textit{BM-8}, with an impact radius of $8$ meters, the intermediate \textit{BM-13}, with an impact radius of $13$ meters, and the massive \textit{BM-30}, with an impact radius of a whopping $30$ meters. Comrade Super-Soldier, you need to determine whether you can return to your comrades and complete the final assault in the Great Patriotic War!
+
+\par
+There will be a grid of $101$ by $101$ squares. Each of the $N$ \textbf{Katyusha} units will turn a square at $(x,y)$ into a death-zone (\textbf{DZ}). You start from the bottom left corner (square $(0,0)$) of the grid and must reach the top right corner (square $(100,100)$) of the grid without entering any \textbf{DZ}. You may travel in any direction laterally, but may not travel diagonally. Good luck, \textit{comrade}!
+
+\textbf{\large Input Specification}
+\par
+The first line will contain one integer, $0 \le N \le 5000$. Each of the next $N$ lines will contain $2$ space-separated integers, $0 \le x_i \le 100$ and $0 \le y_i \le 100$.
+
+\textbf{\large Output Specification}
+\par
+You will print a single character, $y$ to indicate that you can reach your comrades or $n$ to indicate that you will die for the motherland.
+\\\\
+\textbf{\large Sample Input 1}
+\begin{verbatim}
+2
+0 1
+1 0
+\end{verbatim}
+\textbf{\large Sample Output 1}
+\begin{verbatim}
+n
+\end{verbatim}
+
+\textbf{\large Sample Input 2}
+\begin{verbatim}
+21
+0 1
+1 1
+2 1
+4 0
+4 1
+4 2
+4 3
+3 3
+2 3
+1 3
+0 7
+1 7
+2 7
+3 7
+4 7
+5 7
+6 7
+6 6
+6 5
+6 4
+6 3
+\end{verbatim}
+\textbf{\large Sample Output 2}
+\begin{verbatim}
+y
+\end{verbatim}
+
+\thispagestyle{empty}
+\end{document}

@@ -1,0 +1,81 @@
+\documentclass[]{article}
+\usepackage{graphicx}
+\usepackage{hyperref}
+\hypersetup{
+    colorlinks=true,
+    linkcolor=blue,
+    filecolor=magenta,      
+    urlcolor=cyan,
+}
+\usepackage[a4paper, total={6in, 8in}]{geometry}
+\setlength\parindent{0pt}
+\setlength{\parskip}{1em}
+\graphicspath{ {./} }
+\thispagestyle{empty}
+
+\begin{document}
+
+{\Large BSSPC ‘19 P6 - Under Attack}
+\\\\
+\textbf{\large Problem Statement}
+\par
+The only thing Raymond loves more than making insane String manipulation problems is playing chess. He needs you to help him win his chess game with some insane String manipulation.
+\par
+He gives you an 8x8 chessboard containing the following pieces:
+\begin{itemize}
+\item P - Pawn
+\item N - Knight
+\item B - Bishop
+\item R - Rook
+\item Q - Queen
+\item K - King
+\end{itemize}
+
+\par
+The white pieces will be denoted with upper-case letters and the black pieces with lower-case letters. He also gives you the coordinates for a square on the chessboard.
+
+\par
+Your task is to determine the number of pieces on the given chessboard that can reach this square in or within a given number of moves, given that the pieces can only make standard chess moves. When considering a piece, consider it as the only piece on the board (i.e. moves that may only occur as part of a capture are prohibited, as is castling.)
+
+\par
+See Wikipedia for Chess piece \href{https://en.wikipedia.org/wiki/Rules\_of\_chess\#Movement}{movement} and \href{https://en.wikipedia.org/wiki/Algebraic\_notation\_\%28chess\%29}{algebraic notation}.
+
+\textbf{\large Input Specification}
+\par
+The first line of input will consist of an integer, $N$, representing the number of moves to consider, where $1 \le N \le 10$.
+
+\par
+The next 8 lines of input will each contain a row of the chessboard, with the $i^{th}$ line of input representing the $(9-i)^{th}$ rank of the chessboard. Each of these lines will contain a String consisting of 8 characters from `PNBRQK.`. The `.` will be used to represent an empty square.
+
+\par
+The final line of input will contain a character, $X \in \{$A, B, C, D, E, F, G, H$\}$ and an integer, $1 \le Y \le 8$, separated by a space, representing the square of the chessboard to consider. In Sample Input 1, the square considered is $B4$.
+
+\textbf{\large Output Specification}
+\par
+You will output, as a single integer, the number of pieces on the chessboard that, using only standard moves, can reach the specified square in up to $N$ moves. If there is already a piece at that square, it is considered one such piece. \textbf{You do not need to consider the existence of any other pieces when determining whether a piece can get to the square, but the pieces must stay on the chessboard. Note that Raymond doesn't want to kill you, so you do not need to consider castling and capturing. You do, however, need to consider pawns moving 2 squares from their starting positions. Assume that white starts at the bottom of the board, and black starts at the top. Also assume that pawns auto-queen when they get to the other side and no pawns can be on the $1^{st}$ or $8^{th}$ rank}
+\\\\
+\textbf{\large Sample Input}
+\begin{verbatim}
+2
+r..qk..r
+...bb.pp
+.....p..
+.p.Q....
+.pNP....
+....P...
+PB....PP
+R....RK.
+B 4
+\end{verbatim}
+\textbf{\large Sample Output}
+\begin{verbatim}
+10
+\end{verbatim}
+
+\textbf{\large Explanation}
+
+\includegraphics[width=0.48\textwidth]{p4.png}
+\\
+Green squares are possible pieces.
+\thispagestyle{empty}
+\end{document}

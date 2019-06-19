@@ -1,0 +1,82 @@
+\documentclass[]{article}
+\usepackage[a4paper, total={6in, 8in}]{geometry}
+\setlength\parindent{0pt}
+\setlength{\parskip}{1em}
+\thispagestyle{empty}
+
+\begin{document}
+
+{\Large BSSPC ‘19 P3 - Shakespeare Insults}
+\\\\
+\textbf{\large Problem Statement}
+\par
+magicalsoup just used some \textbf{nasty} Shakespeare insults today! Sadly, his was by far not the best, thus after collecting a bit of data, he asks you to help him find the top 3 best insults.
+\par
+A Shakespeare insult is comprised of 3 parts, an adjective, another adjective, then a noun.
+\par
+You will be given 3 integers, $N$, $M$ and $K$, the number of adjective 1, adjective 2 and nouns.
+\par
+For each adjective and noun, you will also be given a number $X$, the number of \textit{points}, a word will have. The best insult is the one with the collective \textit{points}. In other words, an insult's \textit{points} is calculated by adding the \textit{points} of \texttt{adjective1}, \texttt{adjective2} and \texttt{noun} respectively.
+\par
+All adjectives and nouns will be one word, composed of uppercase, lowercase letters, and the character `-` to substitute a space.
+\par
+Help magicalsoup with his sore loser syndrome!
+
+Output the answers in the form \texttt{adjective 1} \texttt{adjective 2} \texttt{noun} with a space in between each of the words.
+
+Note: If there is a tie, output the answer that is bigger. For example, giving the 2 strings with the same value `a b c` and `a b d`, String `a b d` is the answer as it is the bigger string \textbf{lexicographically}.
+
+\textbf{\large Input Specification}
+\par
+First line, an integer $N$ $(1 \le N \le 10^3)$
+
+Next $N$ lines: input will be given in the form \textit{word x}, where \textit{word} will be the \textbf{adjective 1} and \textit{x} will be the points.
+
+Next line, an integer $M$ $(1 \le M \le 10^3)$
+
+Next $M$ lines: input will be given in the form \textit{word x}, where \textit{word} will be the \textbf{adjective 2} and \textit{x} will be the points.
+
+Next line: an integer $K$ $(1 \le K \le 10^3)$
+
+Next $K$ lines: input will be given in the from \textit{word x}, where \textit{word} will be the \textbf{noun} and $x$ will be the points.
+
+You may assume all $x$ values will be less than or equal to $10^9$ and bigger than or equal to $-10^9$. You may also assume that each word length will be smaller than $30$ characters.
+
+\textbf{\large Output Specification}
+\par
+On 3 separate lines, output the top 3 Shakespeare insults, each word being separated by a space. List them from best to worst.
+
+\par
+\textbf{All insults should be distinct, but a word may be used for multiple insults.}
+\\\\\\\\
+\textbf{\large Sample Input}
+\begin{verbatim}
+2
+artless 3
+base-court 6
+3
+bawdy 7
+churlish 10
+cockered 20
+4
+apple-john 200
+baggage 4
+clotpole 3
+death-token 100
+\end{verbatim}
+\textbf{\large Sample Output}
+\begin{verbatim}
+1. base-court cockered apple-john
+2. artless cockered apple-john
+3. base-court churlish apple-john 
+\end{verbatim}
+\textbf{\large Explanation}
+\par
+The first one's score is $6 + 20 + 200 = 226$.
+
+The second one's score is $3 + 20 + 200 = 223$.
+
+The third one's score is $6 + 10 + 200 = 216$.
+
+\thispagestyle{empty}
+\end{document}

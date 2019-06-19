@@ -1,0 +1,50 @@
+\documentclass[]{article}
+\usepackage[a4paper, total={6in, 8in}]{geometry}
+\setlength\parindent{0pt}
+\setlength{\parskip}{1em}
+\thispagestyle{empty}
+
+\begin{document}
+
+{\Large BSSPC ‘19 P9 - Timetables}
+\\\\
+\textbf{\large Problem Statement}
+\par
+The school has been finishing up making the timetables for students next year, but now have to determine the placings of students who did not get the courses they want. For each student, they hate some courses more than others, so we can assign a \textit{hate value} for each student per course. Help the school by making a program to assign students to courses while minimizing the total \textit{hate value} from all of the students.
+
+\par
+Note: Only one student can be assigned to one course spot, and each student only gets one course spot.
+
+\textbf{\large Input Specification}
+\par
+The first line will contain the integer $N$ ($1 \le N \le 25$), which is the number of students that still need a course, and the number of course spots available.
+
+\par
+The following $N$ lines each contain integers ($d_1, d_2, ..., d_N$) with $d_i$ ($0 \le d_i < 200000$) being the \textit{hate value} the student has for course spot $i$.
+
+\par
+For 3 out the 10 marks available, $N \le 3$.
+
+\textbf{\large Output Specification}
+\par
+Output one integer, which is the minimum total \textit{hate value} that the students collectively have with an optimal course placing.
+\\\\
+\textbf{\large Sample Input}
+\begin{verbatim}
+3
+1 2 3
+5 4 3
+10000 5 10
+\end{verbatim}
+\textbf{\large Sample Output}
+\begin{verbatim}
+9
+\end{verbatim}
+\textbf{\large Explanation}
+\par
+For the first course spot, it is best to let student 1 to have the course spot, since her hate value is 1, which is lower than all of the other students spot. For course spot 2, while it’s best to give the spot to student 3, since student 3’s hate value for course spot 3 is much higher than student 2’s. After assigning the students to their course spot, we can add up the hate values, to get 9:
+
+\par
+$1 + 5 + 3 = 9$
+
+\end{document}

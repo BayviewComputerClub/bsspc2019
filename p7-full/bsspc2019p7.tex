@@ -1,0 +1,58 @@
+\documentclass[]{article}
+\usepackage{graphicx}
+\usepackage[normalem]{ulem}
+\usepackage[a4paper, total={6in, 8in}]{geometry}
+\setlength\parindent{0pt}
+\setlength{\parskip}{1em}
+\graphicspath{ {./} }
+\thispagestyle{empty}
+
+\begin{document}
+
+{\Large BSSPC ‘19 P7 - Learning The Alphabet}
+\\\\
+\textbf{\large Problem Statement}
+\par
+p1geon is learning the alphabet in English class but he’s having difficulty memorizing the correct order. 
+\par
+Please help him find the longest subsequence of the letters he has written down which is in the correct order (that is there can be missing letters which can be filled in to create a correct subsequence of the alphabet).
+
+\textbf{\large Constraints}
+\par
+\textbf{Subtask 1[10\%]}
+\par
+$1 \le n \le 10$
+\par
+\textbf{Subtask 2[30\%]}
+\par
+$1 \le n \le 10^3$
+\par
+\textbf{Subtask 3[60\%]}
+\par
+$1 \le n \le 10^6$
+
+\textbf{\large Input Specification}
+\par
+The first line of input will be an integer, $n$, representing the length of the string. 
+\par
+The second line of input will be a string of letters of length $n$. The letters may be lowercase or uppercase but only the alphabetical order matters.
+
+\textbf{\large Output Specification}
+\par
+Output the length of the longest subsequence in the correct order.
+\\\\
+\textbf{\large Sample Input}
+\begin{verbatim}
+8
+AbCDabEz
+\end{verbatim}
+\textbf{\large Sample Output}
+\begin{verbatim}
+6
+\end{verbatim}
+\textbf{\large Explanation}
+\par
+The longest subsequence of correct order is \texttt{AbCDEz}.
+
+\thispagestyle{empty}
+\end{document}

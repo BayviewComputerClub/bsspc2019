@@ -1,0 +1,83 @@
+\documentclass[]{article}
+\usepackage{graphicx}
+\usepackage[normalem]{ulem}
+\usepackage[a4paper, total={6in, 8in}]{geometry}
+\setlength\parindent{0pt}
+\setlength{\parskip}{1em}
+\graphicspath{ {./} }
+\thispagestyle{empty}
+
+\begin{document}
+
+{\Large BSSPC ‘19 P5 - Taro Milk Tea}
+\\\\
+\textbf{\large Problem Statement}
+\par
+Amey is a student at Bayview Secondary School and like for any other \sout{filthy} Bayview student, milk tea is a staple drink. As for Amey, he especially likes \sout{potato juice} taro milk tea. Being the taro milk tea connoisseur he is, he will only drink milk tea with sugar concentrations ranging from $a$ to $b$. 
+
+\par
+Around Bayview Secondary, there are $n$ different milk tea stores which are built beside each other, which each sell taro milk tea with a sugar concentration of $c_i$. Additionally, each milk tea store has an effect rating $e_i$ to indicate the popularity of a milk tea store. 
+
+\par
+Recently, $q$ surveys have been conducted by certain milk tea vendors. The results of each survey indicate how much the concentration of sugar should increase by through an integer value. Other milk tea stores within the effect range (all milk tea stores $e_i$ units to the left and right up until store 1 or store $n$. In other words, stores within the range $[i - e_i, i + e_i]$) will also follow suit by adding the same amount of sugar in hopes of more customers. 
+
+\par
+Find the number of milk tea stores that Amey will be willing to buy and drink taro milk tea from after all the surveys and sugar concentration adjustments. 
+
+\textbf{\large Input Specification}
+\par
+The first line will be the number of milk tea stores near Bayview Secondary, $n$.
+\par
+The next line of input will be Amey’s sugar concentration tolerance $[a,b]$.
+\par
+The next line will be $n$ integers, separated by a space, which represent the base sugar concentrations in the milk tea of each store ($c_1, c_2, c_3, ...,c_n$). 
+\par
+The next line will be $n$ integers, separated by a space, which represent the effect rating of each milk tea store ($e_1, e_2 , e_3, ..., e_n$). 
+\par
+The next line contains the number $q$, representing the number of surveys conducted by the nearby stores.
+\par 
+Finally, $q$ lines follow each containing two integers in the form $s$ $r$, $s$ representing the index of the store which conducted the survey, and $r$ representing the result of the survey.
+
+\textbf{\large Output Specification}
+\par
+Print out the number of milk tea stores that Amey is willing to drink from. 
+\\\\
+
+\textbf{\large Subtasks}
+\\\\
+For all subtasks:
+\\\\
+$1 \le n \le 10^5$.
+\\\\
+$1 \le a \le b \le 10^{12}$.
+\\\\
+$1 \le c_i \le 10^9$, $1 \le e_i \le n$.
+\\\\
+$1 \le s \le n$, $1 \le r \le 10^9$.
+\\\\
+\textbf{Subtask 1 [20\%]}
+\\\\
+$1 \le q \le 1000$
+\\\\
+\textbf{Subtask 2 [80\%]}
+\\\\
+$1 \le q \le 10^5$
+\\\\
+\textbf{\large Sample Input}
+\begin{verbatim}
+5
+4 6
+0 0 0 1 0
+1 2 1 1 0
+3
+3 2
+5 4
+4 2
+\end{verbatim}
+\textbf{\large Sample Output}
+\begin{verbatim}
+3
+\end{verbatim}
+
+\thispagestyle{empty}
+\end{document}

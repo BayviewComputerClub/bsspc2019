@@ -1,0 +1,49 @@
+\documentclass[]{article}
+\usepackage[a4paper, total={6in, 8in}]{geometry}
+\usepackage{minted}
+\setlength\parindent{0pt}
+\setlength{\parskip}{1em}
+\thispagestyle{empty}
+
+\begin{document}
+
+{\Large BSSPC ‘19 P1 - Complex Contest Judging}
+\\\\
+\textbf{\large Problem Statement}
+\par
+Mr. A just spent the last month working on a judge for the Complex Judging Programming Contest. It was all going great, until he realized he forgot to write the grader server!
+
+\par
+Thankfully, this contest (for whatever reason...) only has 1 problem, A times B. Since Mr. A has just about had it after writing all this PHP for the judge, help him by creating a simple grader server!
+
+\textbf{\large Input Specification}
+\par
+The first line will contain the space-separated integers $a$ and $b$ ($1 \le a, b \le 100$), which is the test case (numbers to multiply).
+
+The second line will contain the integer $c$, which is the user’s program’s output.
+
+\textbf{\large Output Specification}
+\par
+Output on one line AC if the user’s program’s output was correct, and WA if the output was wrong.
+
+\textbf{\large Sample Input 1}
+\vspace{-\topsep}
+\begin{minted}{text}
+2 3
+6
+\end{minted}
+\textbf{\large Sample Output 1}
+\begin{minted}{text}
+AC
+\end{minted}
+\textbf{\large Sample Input 2}
+\begin{minted}{text}
+2 3
+5
+\end{minted}
+\textbf{\large Sample Output 2}
+\begin{minted}{text}
+WA
+\end{minted}
+
+\end{document}
