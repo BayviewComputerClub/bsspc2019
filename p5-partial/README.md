@@ -13,3 +13,4 @@
   }
   ```
 - A thing that contestant needed to watch out was that they needed to use a 64-bit type data variable, due to overflow errors. And also to watch out for index out of bounds errors.
+- This had a time complexity of **`O(N + NQ)`**, which was passable for this subtask.
