@@ -2,31 +2,21 @@
 Congratualations to all the people who attended!
 
 ## Problem Setters
-The problem setters this year were
-1. Jim gao
-2. Magicalsoup
-3. Devin Lin
-4. Seshan Ravikumar
-5. Leon Dong
-6. Raymond Li
-
-Contributions of Problem Setters
-
-|Rank|Name|Job|Problems (Created)|Problems (Solution Writer)|Problems (Test-data Generator)|
-|:---|:---|:--|:-----------------|:------------------------|:-----------------------------|
-|1|Devin Lin|Main Organizer, Leader, Boss|2, 9|2, 9|2, 9|
-|2|Seshan Ravikumar|Problem Setter, Judge Setup|1|N/A|N/A|
-|3|Magicalsoup|Problem Setter, Solution Writer, Test-data Generator|1,2,3,4,5,6,7,8,9,10|1,2,3,4,5,6,7,8,9,10|
-|4|Leon Dong|Problem Setter|5, 7|7|5, 7|
-|5|Jim Gao|Problem Setter|10|10|10|
-|-9999|Raymond Li|Problem Setter|4, 6|N/A|N/A|
-
-
+Problem Setters:
+|Name|Problems|
+|:---|:-------|
+|Seshan Ravikumar|1|
+|Devin Lin|2, 9|
+|Magicalsoup|3,8|
+|Raymond Li|4, 6|
+|Leon Dong|5, 7|
+|Jim Gao|10|
 
 ## Prizes
-The prizes this year were 3 raspberry3 PIs and rollntea giftcards.
+* 3 Raspberry Pi3Bs
+* Roll'n'Tea giftcards
 
-The winners this year were:
+## Winners
 1. Simon ou
 2. Dickson Li
 3. Lakshy Grupta
@@ -34,14 +24,5 @@ The winners this year were:
 5. Andrew Wang
 6. Amitoj Sohanpal
 
-
 ## Notes
-|Name|Admin/User|Note|
-|:---|:---------|:---|
-|Devin|Admin||
-|Seshan Ravikumar|Admin||
-|Jim Gao|Admin||
-|Magicalsoup|Admin|Raymond.... ~Maybe try to solve your own problem before creating it~ Hello.|
-|Leon Dong|Admin||
-|Raymond|User||
-
+BSSPC 2020 will be spilt into monthly contests and a grand final with $$$.
