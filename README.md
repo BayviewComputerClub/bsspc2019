@@ -3,14 +3,14 @@ Congratualations to all the people who attended!
 
 ## Problem Setters
 Problem Setters:
-|Name|Problems|
-|:---|:-------|
-|Seshan Ravikumar|1|
-|Devin Lin|2, 9|
-|Magicalsoup|3,8|
-|Raymond Li|4, 6|
-|Leon Dong|5, 7|
-|Jim Gao|10|
+| Name             | Problems |  
+|:-----------------|:--------:|
+| Seshan Ravikumar | 1        |
+| Devin Lin        | 2, 9     |
+| Magicalsoup      | 3,8      |
+| Raymond Li       | 4, 6     |
+| Leon Dong        | 5, 7     |
+| Jim Gao          | 10       |
 
 ## Prizes
 * 3 Raspberry Pi3Bs
