@@ -1,5 +1,5 @@
 # Bayview Secondary School Programming Contest 2019
-Congratualations to all the people who attended!
+Congratulations to all the people who attended!
 
 ## Problem Setters
 
@@ -19,12 +19,10 @@ Problem Setters:
 * Roll'n'Tea giftcards
 
 ## Winners
-1. Simon ou
+1. Simon Ou
 2. Dickson Li
-3. Lakshy Grupta
+3. Lakshy Gupta
 4. Peter Wang
 5. Andrew Wang
 6. Amitoj Sohanpal
 
-## Notes
-BSSPC 2020 will be spilt into monthly contests and a grand final with $$$.
